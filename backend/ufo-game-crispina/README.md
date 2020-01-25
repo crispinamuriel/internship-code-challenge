@@ -1,5 +1,3 @@
-
-
 # UFO: The Game
 Hello 👋 This game was written by Crispina Muriel
 in Javascript
