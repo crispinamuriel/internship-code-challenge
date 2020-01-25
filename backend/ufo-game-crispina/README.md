@@ -23,3 +23,4 @@ Invaders from outer space have arrived and are abducting humans using tractor be
 download my game files here:
 cd into directory: `cd ufo-game-crispina`
 npm install: `npm install`
+start game: `node index.js`
