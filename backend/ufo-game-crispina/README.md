@@ -24,7 +24,7 @@ Invaders from outer space have arrived and are abducting humans using tractor be
 
 ### How to play:
 
-Download Crispina's game files here: (link) [https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina]
+Download Crispina's game files [here](https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina)
 
 
 cd into directory: `cd ufo-game-crispina`
