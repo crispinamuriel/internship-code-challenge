@@ -2,7 +2,7 @@ Hello 👋 This game was written by Crispina Muriel
 in Javascript
 on 1/25/2020
 
-## UFO: The Game
+# UFO: The Game
 
 ```
                  .
@@ -26,7 +26,7 @@ Invaders from outer space have arrived and are abducting humans using tractor be
 
 Clone / Download Crispina's game files [here](https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina)
 
-# below are `CLI commands` to follow:
+#### below are `CLI commands` to follow:
 
 cd into directory:  `cd ufo-game-crispina`
 
