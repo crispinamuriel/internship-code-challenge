@@ -1,9 +1,9 @@
+
+
+# UFO: The Game
 Hello 👋 This game was written by Crispina Muriel
 in Javascript
 on 1/25/2020
-
-# UFO: The Game
-
 ```
                  .
                  |
