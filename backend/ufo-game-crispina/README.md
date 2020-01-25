@@ -1,3 +1,7 @@
+Hello 👋 This game was written by Crispina Muriel
+in Javascript
+on 1/25/2020
+
 ## UFO: The Game
 
 ```
@@ -20,7 +24,9 @@ Invaders from outer space have arrived and are abducting humans using tractor be
 
 ### How to play:
 
-download my game files here:
+Download Crispina's game files here: (link) [https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina]
+
+
 cd into directory: `cd ufo-game-crispina`
 npm install: `npm install`
 start game: `node index.js`
