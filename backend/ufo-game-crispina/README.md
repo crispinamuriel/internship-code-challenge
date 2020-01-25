@@ -20,7 +20,7 @@ on 1/25/2020.
 
 Invaders from outer space have arrived and are abducting humans using tractor beams. Earn your medal of honor by cracking the codeword to stop the abduction!
 
-### How to play:
+## How to play:
 
 Clone / Download Crispina's game files [here](https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina)
 
