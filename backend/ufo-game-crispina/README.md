@@ -28,5 +28,8 @@ Download Crispina's game files [here](https://github.com/crispinamuriel/internsh
 
 
 cd into directory: `cd ufo-game-crispina`
+
 npm install: `npm install`
+
 start game: `node index.js`
+
