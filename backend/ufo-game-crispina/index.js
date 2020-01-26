@@ -12,3 +12,19 @@ function getWord() {
 
 console.log(getWord());
 
+class UFO  {
+  constructor(word, remainingGuesses) {
+    this.word = word.toLowerCase();
+    this.guessed =  [];
+    this.status =  'playing';
+  }
+
+  getStatusMessage() {
+    if(this.status === 'failed')
+    if(this.status === 'win')
+    if(this.status === 'playing')
+  }
+
+
+}
+
