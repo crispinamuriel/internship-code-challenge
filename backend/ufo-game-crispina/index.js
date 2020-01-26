@@ -19,10 +19,10 @@ class UFO  {
     this.status =  'playing';
   }
 
-  getStatusMessage() {
-    if(this.status === 'failed')
-    if(this.status === 'win')
-    if(this.status === 'playing')
+  displayStatusMessage() {
+    if(this.status === 'failed') loseMessage();
+    if(this.status === 'win') winMessage();
+    if(this.status === 'playing') currentStatus();
   }
 
   calculateStatus() {
@@ -43,7 +43,7 @@ class UFO  {
       if(this.guessed.includes(letter)) {
         puzzle += letter;
       } else {
-        puzzle += '*';
+        puzzle += '_';
       }
     });
     return puzzle;
