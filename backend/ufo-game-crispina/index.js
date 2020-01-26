@@ -25,6 +25,46 @@ class UFO  {
     if(this.status === 'playing')
   }
 
+  calculateStatus() {
+    const win = this.word.every((letter) => this.guessed.includes(letter));
 
+    if(this.remainingGuesses === 0)  {
+      this.status = 'failed';
+    } else if (win) {
+      this.status = 'win';
+    } else {
+      this.status = 'playing';
+    }
+  }
+
+  getPuzzle() {
+    let puzzle =  '';
+    this.word.forEach((letter) => {
+      if(this.guessed.includes(letter)) {
+        puzzle += letter;
+      } else {
+        puzzle += '*';
+      }
+    });
+    return puzzle;
+  }
+
+  makeGuess(guess) {
+    guess =  guess.toLowerCase();
+    const isUnique = !this.guessed.includes(guess);
+    const isBadGuess =  !this.word.includes(guess);
+
+    if(this.status !== 'playing')  {
+      this.calculateStatus();
+      return
+    }
+    if(isUnique) {
+      this.guessed.push(guess);
+    }
+    if(isUnique && isBadGuess) {
+      this.remainingGuesses--;
+    }
+    this.calculateStatus();
+  }
 }
 
