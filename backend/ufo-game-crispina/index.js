@@ -68,3 +68,15 @@ class UFO  {
   }
 }
 
+const startGame  = async() => {
+  const puzzle = await getWord();
+  let game1 = new UFO(puzzle, 6);
+  while (game1.status === "playing") {
+    console.log("hi");
+    game1.status = "win";
+  }
+}
+
+startGame();
+
+
