@@ -96,7 +96,7 @@ const startGame  = async() => {
       game1.remainingGuesses--;
       console.log(game1.remainingGuesses);
       game1.calculateStatus();
-      if(game1.remainingGuesses < 2)  game1.status = 'failed'
+      // if(game1.remainingGuesses < 2)  game1.status = 'failed'
     }
   }
 }
