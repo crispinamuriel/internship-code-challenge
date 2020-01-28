@@ -6,7 +6,7 @@ on 1/25/2020.
                  .
                  |
               .-"^"-.
-             /_....._\
+             /_.UFO._\
          .-"`         `"-.
         (  ooo  ooo  ooo  )
          '-.,_________,.-'   ,-----------.
@@ -22,7 +22,7 @@ Invaders from outer space have arrived and are abducting humans using tractor be
 
 ## How to play:
 
-clone / download Crispina's game files [here](https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina)
+clone or download Crispina's game files [here](https://github.com/crispinamuriel/internship-code-challenge/tree/master/backend/ufo-game-crispina)
 
 #### below are `CLI commands` to follow:
 

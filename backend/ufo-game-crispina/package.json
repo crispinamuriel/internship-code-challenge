@@ -1,0 +1,14 @@
+{
+  "name": "ufo-game-crispina",
+  "version": "1.0.0",
+  "description": "code-academy-internship-challenge-2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Crispina Muriel",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
