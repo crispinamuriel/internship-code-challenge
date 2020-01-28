@@ -1,4 +1,4 @@
-x = [`                 .
+const x = [`                 .
                  |
               .-"^"-.
              /_....._\\
@@ -98,3 +98,9 @@ x = [`                 .
           /             \\
          /               \\
 `];
+
+const y = [];
+for (let i = x.length - 1; i > 0; i--) {
+    y.push(x[i])
+}
+module.exports = y;

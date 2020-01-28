@@ -1,3 +1,4 @@
+const shipArr = require('./ufo');
 
 function getWord() {
   let fs = require("fs");
@@ -14,15 +15,30 @@ console.log(getWord());
 
 class UFO  {
   constructor(word, remainingGuesses) {
-    this.word = word.toLowerCase();
+    this.word = word.toLowerCase().split('');
     this.guessed =  [];
     this.status =  'playing';
+    this.remainingGuesses  =  remainingGuesses;
   }
 
   displayStatusMessage() {
-    if(this.status === 'failed') loseMessage();
-    if(this.status === 'win') winMessage();
-    if(this.status === 'playing') currentStatus();
+    if(this.status === 'failed') this.loseMessage();
+    if(this.status === 'win') this.winMessage();
+    if(this.status === 'playing') this.currentStatus();
+  }
+
+  loseMessage() {
+    console.log('you lose');
+    this.currentStatus();
+  }
+
+  winMessage() {
+    console.log('you win');
+  }
+
+  currentStatus() {
+    const remaining = this.remainingGuesses;
+    console.log(shipArr[remaining]);
   }
 
   calculateStatus() {
@@ -35,6 +51,7 @@ class UFO  {
     } else {
       this.status = 'playing';
     }
+    this.displayStatusMessage();
   }
 
   getPuzzle() {
@@ -69,11 +86,18 @@ class UFO  {
 }
 
 const startGame  = async() => {
-  const puzzle = await getWord();
-  let game1 = new UFO(puzzle, 6);
+  const word = await getWord();
+  let game1 = new UFO(word, 6);
   while (game1.status === "playing") {
-    console.log("hi");
-    game1.status = "win";
+
+    console.log(shipArr[5]);
+    for(let i = 0; i < 6; i++){
+      console.log("hi");
+      game1.remainingGuesses--;
+      console.log(game1.remainingGuesses);
+      game1.calculateStatus();
+      if(game1.remainingGuesses < 2)  game1.status = 'failed'
+    }
   }
 }
 
