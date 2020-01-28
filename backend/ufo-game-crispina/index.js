@@ -31,7 +31,7 @@ class UFO  {
 
   loseMessage() {
     this.currentStatus();
-    console.log('You lose! Say goodbye to earth!');
+    console.log(`Whoops, You ran out of guesses! The word was ${this.word.join('')} Say goodbye to earth!`);
   }
 
   winMessage() {
@@ -84,8 +84,8 @@ class UFO  {
     if (isUnique && isBadGuess) {
       this.remainingGuesses--;
     }
-    this.calculateStatus();
-    console.log(this.word);
+    // this.calculateStatus();
+    // console.log(this.word);
   }
 }
 
