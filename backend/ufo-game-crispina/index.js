@@ -59,7 +59,7 @@ class UFO  {
   getPuzzle() {
     let puzzle =  '';
     this.word.forEach((letter) => {
-      if(this.guessed.includes(letter)) {
+      if (this.guessed.includes(letter)) {
         puzzle += letter;
       } else {
         puzzle += '_ ';
@@ -74,10 +74,10 @@ class UFO  {
     const isBadGuess =  !this.word.includes(guess);
 
     if (this.status !== 'playing')  {
-      this.calculateStatus();
       console.log(this.status)
       return
     }
+    if (!isUnique) console.log(`You've already guessed '${guess}'. Choose another letter!`)
     if (isUnique) {
       this.guessed.push(guess);
     }
@@ -102,7 +102,7 @@ const startGame  = async() => {
     game1.makeGuess(guess);
     console.log('Guesses Remaining: ', game1.remainingGuesses);
     if (game1.remainingGuesses < 1)  game1.status = 'failed'
-    game1.displayStatusMessage();
+
   }
   const play = readline.question('Play again? Type YES or NO: ');
   if (play.toUpperCase() === 'YES') startGame();
