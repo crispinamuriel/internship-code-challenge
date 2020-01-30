@@ -60,7 +60,7 @@ class UFO  {
     let puzzle =  '';
     this.word.forEach((letter) => {
       if (this.guessed.includes(letter)) {
-        puzzle += letter;
+        puzzle += letter + ' ';
       } else {
         puzzle += '_ ';
       }
