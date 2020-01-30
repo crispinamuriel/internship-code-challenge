@@ -19,6 +19,7 @@ class UFO  {
   }
 
   welcomeMessage(){
+    console.log(shipArr[6]);
     console.log('Welcome to Ms.Muriel\'s guessing game! Guess the code word or be abducted!');
     console.log('Please enter a guess.');
   }
@@ -82,6 +83,7 @@ class UFO  {
       this.guessed.push(guess);
     }
     if (isUnique && isBadGuess) {
+      console.log('Whoops, wrong answer! Careful you don\'t want to go into the ship!');
       this.remainingGuesses--;
     }
       this.calculateStatus();
@@ -93,7 +95,6 @@ const startGame  = async() => {
   const readline = require('readline-sync');
   const word = await getWord();
   let game1 = new UFO(word, 6);
-  console.log(shipArr[6]);
   game1.welcomeMessage();
 
   while (game1.status === 'playing') {
