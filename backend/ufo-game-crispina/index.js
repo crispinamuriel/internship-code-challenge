@@ -93,7 +93,7 @@ const startGame  = async() => {
   const readline = require('readline-sync');
   const word = await getWord();
   let game1 = new UFO(word, 6);
-  console.log(shipArr[5]);
+  console.log(shipArr[6]);
   game1.welcomeMessage();
 
   while (game1.status === 'playing') {
