@@ -106,8 +106,8 @@ const startGame  = async() => {
     console.log(`Incorrect Guesses: ${game1.badGuesses.join(' ')}`);
     console.log('Guesses Remaining: ', game1.remainingGuesses);
     if (game1.remainingGuesses < 1)  game1.status = 'failed';
-
   }
+
   const play = readline.question('Play again? Type YES or NO: ');
   if (play.toUpperCase() === 'YES') startGame();
   if (play.toUpperCase() === 'NO') console.log('Thank you for playing! Goodbye.');

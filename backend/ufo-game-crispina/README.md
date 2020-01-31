@@ -30,7 +30,7 @@ Open your terminal and follow these commands:
 
 cd into directory:  `cd ufo-game-crispina`
 
-npm install:  `npm install`
+install dependancies:  `npm install`
 
 start game:  `node index.js`
 
