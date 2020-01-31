@@ -16,6 +16,7 @@ class UFO  {
     this.guessed = [];
     this.status = 'playing';
     this.remainingGuesses = remainingGuesses;
+    this.badGuesses = [];
   }
 
   welcomeMessage(){
@@ -75,16 +76,17 @@ class UFO  {
     const isBadGuess =  !this.word.includes(guess);
 
     if (this.status !== 'playing')  {
-      console.log(this.status)
+      console.log(this.status);
       return
     }
-    if (!isUnique) console.log(`You've already guessed '${guess}'. Choose another letter!`)
+    if (!isUnique) console.log(`You've already guessed '${guess}'. Choose another letter!`);
     if (isUnique) {
       this.guessed.push(guess);
     }
     if (isUnique && isBadGuess) {
       console.log('Whoops, wrong answer! Careful you don\'t want to go into the ship!');
       this.remainingGuesses--;
+      this.badGuesses.push(guess);
     }
       this.calculateStatus();
   }
@@ -101,13 +103,14 @@ const startGame  = async() => {
     console.log(game1.getPuzzle());
     const guess = readline.question('Type a letter, then press RETURN here: ');
     game1.makeGuess(guess);
+    console.log(`Incorrect Guesses: ${game1.badGuesses.join(' ')}`);
     console.log('Guesses Remaining: ', game1.remainingGuesses);
-    if (game1.remainingGuesses < 1)  game1.status = 'failed'
+    if (game1.remainingGuesses < 1)  game1.status = 'failed';
 
   }
   const play = readline.question('Play again? Type YES or NO: ');
   if (play.toUpperCase() === 'YES') startGame();
-  if (play.toUpperCase() === 'NO') console.log('Thank you for playing! Goodbye.')
+  if (play.toUpperCase() === 'NO') console.log('Thank you for playing! Goodbye.');
 }
 
 startGame();
