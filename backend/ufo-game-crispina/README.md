@@ -26,6 +26,8 @@ clone or download Crispina's game files [here](https://github.com/crispinamuriel
 
 #### below are `CLI commands` to follow:
 
+Open your terminal and follow these commands:
+
 cd into directory:  `cd ufo-game-crispina`
 
 npm install:  `npm install`

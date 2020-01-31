@@ -112,3 +112,4 @@ const startGame  = async() => {
 
 startGame();
 
+module.exports = UFO;
